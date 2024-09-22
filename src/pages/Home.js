@@ -4,32 +4,97 @@ import blog_img_2 from '../assets/images/2.jpg';
 import blog_img_3 from '../assets/images/3.jpg';
 import blog_img_4 from '../assets/images/4.jpg';
 import contact_img from '../assets/images/5.jpg';
-
+import bannerimg1 from '../assets/images/6.jpg';
+import bannerimg2 from '../assets/images/5.jpg';
+import bannerimg3 from '../assets/images/2.jpg';
 
 
 function Home() {
 
   return (
     <div>
-    {/* Header */}
-  
-   
-
+    
     {/* Main Content */}
     <main id="content">
       {/* Slider */}
       <div className="px-4 lg:px-6 lg:px-8">
-      <div className="relative">
-        <div className="relative overflow-hidden w-full h-[30rem] md:h-[calc(100vh-106px)] bg-gray-100 rounded-2xl dark:bg-neutral-800">
-          <div className="absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-            {/* Slide Items */}
-            <div className="hs-carousel-slide" style={{ backgroundImage: `url('../assets/images/6.jpg')` }}></div>
-            <div className="hs-carousel-slide" style={{ backgroundImage: `url('../assets/images/5.jpg')` }}></div>
-            <div className="hs-carousel-slide" style={{ backgroundImage: `url('../assets/images/2.jpg')` }}></div>
+      <div data-hs-carousel='{"loadingClasses": "opacity-0"}' className="relative">
+        <div className="hs-carousel relative overflow-hidden w-full h-[30rem] md:h-[calc(100vh-106px)] bg-gray-100 rounded-2xl dark:bg-neutral-800">
+          <div className="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+            
+            {/* Item 1 */}
+            <div className="hs-carousel-slide">
+              <div
+                style={{ backgroundImage: `url(${bannerimg1})` }}
+                className="h-[30rem] md:h-[calc(100vh-106px)] flex flex-col bg-cover bg-center bg-no-repeat"
+              >
+                <div className="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
+                  <span className="block text-white">Causes of Depression in Children</span>
+                  <span className="block text-white text-xl md:text-3xl">
+                    Depression in children can result from genetics, stress, and trauma.
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Item 2 */}
+            <div className="hs-carousel-slide">
+              <div
+                style={{ backgroundImage: `url(${bannerimg2})` }}
+                className="h-[30rem] md:h-[calc(100vh-106px)] flex flex-col bg-cover bg-center bg-no-repeat"
+              >
+                <div className="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
+                  <span className="block text-white">Symptoms of Depression in Children</span>
+                  <span className="block text-white text-xl md:text-3xl">
+                    Symptoms include sadness, irritability, withdrawal, and appetite changes.
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Item 3 */}
+            <div className="hs-carousel-slide">
+              <div
+                style={{ backgroundImage: `url(${bannerimg3})` }}
+                className="h-[30rem] md:h-[calc(100vh-106px)] flex flex-col bg-cover bg-center bg-no-repeat"
+              >
+                <div className="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
+                  <span className="block text-white">Impact of Depression on Child Development</span>
+                  <span className="block text-white text-xl md:text-3xl">
+                    Depression affects a child's development and academic performance.
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        {/* Arrows */}
+        <button
+          type="button"
+          className="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-s-2xl focus:outline-none focus:bg-white/20"
+        >
+          <span className="text-2xl" aria-hidden="true">
+            <svg className="flex-shrink-0 size-3.5 md:size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+            </svg>
+          </span>
+          <span className="sr-only">Previous</span>
+        </button>
+
+        <button
+          type="button"
+          className="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-e-2xl focus:outline-none focus:bg-white/20"
+        >
+          <span className="sr-only">Next</span>
+          <span className="text-2xl" aria-hidden="true">
+            <svg className="flex-shrink-0 size-3.5 md:size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+            </svg>
+          </span>
+        </button>
       </div>
-    </div>
+      </div>
       {/* * End Slider * */}
       {/* <!-- Blogs --> */}
       <div className="max-w-7xl px-4 lg:px-6 lg:px-8 py-12 lg:py-24 mx-auto">
