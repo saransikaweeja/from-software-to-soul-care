@@ -2,6 +2,7 @@ import React, { useState, useEffect }  from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Predict from './pages/Predict';
 import Home from './pages/Home';
+import About from './pages/About';
 import Header from './layouts/header';
 import Footer from './layouts/footer';
 import './index.css';
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/predict" element={<Predict />} />
+          <Route path="/about" element={<About />} />
         </Routes>
 
         <Footer/>
