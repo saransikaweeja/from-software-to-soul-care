@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from 'react-router-dom';
 
 function Header() {
-   // Step 1: Add theme state and initialize it from localStorage
+ 
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
-  // Step 2: Apply the theme class to the HTML element based on the theme state
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
@@ -14,11 +14,13 @@ function Header() {
     localStorage.setItem("theme", theme); // Store the theme in localStorage
   }, [theme]);
 
-  // Step 3: Toggle theme between light and dark
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
  
+  const location = useLocation();
+  const isActive = (path) => location.pathname === path;
+  
   return (
     <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-7">
       <nav
