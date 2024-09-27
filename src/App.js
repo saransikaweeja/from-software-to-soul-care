@@ -7,6 +7,7 @@ import Blog from './pages/Blog';
 import Blog1 from './pages/Blog1';
 import Blog2 from './pages/Blog2';
 import Blog3 from './pages/Blog3';
+import Blog4 from './pages/Blog4';
 import Header from './layouts/header';
 import Footer from './layouts/footer';
 import './index.css';
@@ -28,6 +29,7 @@ function App() {
           <Route path="/blog-1" element={<Blog1 />} />
           <Route path="/blog-2" element={<Blog2 />} />
           <Route path="/blog-3" element={<Blog3 />} />
+          <Route path="/blog-4" element={<Blog4 />} />
         </Routes>
 
         <Footer/>

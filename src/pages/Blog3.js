@@ -10,7 +10,7 @@ function Blog3() {
                 <ol className="flex items-center justify-center space-x-4">
                     <li className="inline-flex items-center">
                         <a className="text-sm text-gray-300 hover:text-white focus:outline-none focus:text-white" href="/blog">
-                        Blog
+                        Blog 3
                         </a>
                         <svg className="shrink-0 w-4 h-4 text-gray-400 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>

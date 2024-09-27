@@ -74,7 +74,7 @@ function Blog() {
                 {/* <!-- End Card --> */}
 
                 {/* <!-- Card --> */}
-                <a className="group block" href="#">
+                <a className="group block" href="/blog-2">
                     <div className="aspect-w-16 aspect-h-12 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
                     <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
                         src={blog_img_2}  alt="Image Description" />
@@ -108,7 +108,7 @@ function Blog() {
                 {/* <!-- End Card --> */}
 
                 {/* <!-- Card --> */}
-                <a className="group block" href="#">
+                <a className="group block" href="/blog-3">
                     <div className="aspect-w-16 aspect-h-12 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
                     <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
                         src={blog_img_3}  alt="Image Description" />
@@ -142,7 +142,7 @@ function Blog() {
                 {/* <!-- End Card --> */}
 
                 {/* <!-- Card --> */}
-                <a className="group block" href="#">
+                <a className="group block" href="/blog-4">
                     <div className="aspect-w-16 aspect-h-12 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
                     <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
                         src={blog_img_4}  alt="Image Description" />
