@@ -40,7 +40,7 @@ function Blog() {
                 {/* <!-- Card Grid --> */}
                 <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
                 {/* <!-- Card --> */}
-                <a className="group block" href="#">
+                <a className="group block" href="/blog-1">
                     <div className="aspect-w-16 aspect-h-12 overflow-hidden bg-gray-100 rounded-2xl dark:bg-neutral-800">
                     <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
                         src={blog_img_1} alt="Image Description" />

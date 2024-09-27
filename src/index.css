@@ -1,14 +1,3 @@
-/* index.css */
-/* html.dark {
-  background-color: #171717;
-
-}
-
-html {
-  background-color: #fff; 
-
-} */
-
 /* Your dark mode TailwindCSS configuration */
 @tailwind base;
 @tailwind components;

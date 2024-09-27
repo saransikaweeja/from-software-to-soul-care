@@ -148,25 +148,37 @@ function Header() {
         >
           <div className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-7 md:mt-0">
             <div>
-              <a
-                className="relative inline-block text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400 dark:text-white"
-                href="/"
-                aria-current="page"
+                <a
+                    className={`inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300 ${
+                      isActive('/')
+                        ? 'relative before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400'
+                        : 'hover:text-gray-600 '
+                      }`}
+                      href="/"
+                  >
+                    Home
+                </a>
+            </div>
+            <div>
+            <a
+              className={`inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300 ${
+                isActive('/about')
+                  ? 'relative before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400'
+                  : 'hover:text-gray-600 '
+              }`}
+
+              href="/about"
               >
-                Home
+              About
               </a>
             </div>
             <div>
               <a
-                className="inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
-                href="/about"
-              >
-                About
-              </a>
-            </div>
-            <div>
-              <a
-                className="inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300"
+                  className={`inline-block text-black hover:text-gray-600 dark:text-white dark:hover:text-neutral-300 ${
+                    isActive('/blog')
+                      ? 'relative before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-lime-400'
+                      : 'hover:text-gray-600 '
+                  }`}
                 href="/blog"
               >
                 Blog
