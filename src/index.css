@@ -1,0 +1,4 @@
+/* Your dark mode TailwindCSS configuration */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
